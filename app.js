@@ -1,7 +1,7 @@
 $(function () {
-  $('button').on('click', function () {
-    $('ul').children().css('color', 'red');
+  $('.menu-trigger').on('click', function (event) {
+    $(this).toggleClass('active');
+    $('#sp-menu').fadeToggle();
+    event.preventDefault();
   });
 });
-
-
